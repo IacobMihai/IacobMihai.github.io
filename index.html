@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+</html>
+
+<head>
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>CV</h1>
+
+
+
+            <h2>Iacob <span></span> Mihai</h2>
+            <img src="test.png" width="100" height="20" alt="Iacob">
+
+
+            <p id="job-title" style="color: blueviolet; text-align: right;">Web Developer</p>
+
+
+        </div>
+
+        <ul id="top-menu-bar">
+            <li><a href="#" onclick="showHome()">Home </a></li>
+
+            <li><a href="#" onclick="showSkills()">Skills</a></li>
+
+            <li><a href="#" onclick="showProjects()">Projects</a></li>
+            <li><a href="#" onclick="showLanguages()">Languages</a></li>
+
+        </ul>
+    </header>
+    <section id="content">
+        <div id="side-menu">
+            <section>
+                <form action="">
+                    <label for="e">Email</label>
+                    <input type="email" id="e" name="em">
+
+                    <button>
+                        Contact Us
+                    </button>
+                </form>
+            </section>
+            <section>
+
+            </section>
+        </div>
+        <div id="main">
+            <div class="page" id="home">
+                <h2>Home</h2>
+                Bine ai venit.
+            </div>
+
+            <div id="skills" class="page" style="display: none;">
+                <h2>Skills & Endorcements</h2>
+
+                <ul>
+                    <li class="favorite">HTML</li>
+                    <li class="favorite">CSS</li>
+                    <li class="favorite">JS</li>
+                </ul>
+
+            </div>
+
+
+            <div id="projects" class="page" style="display: none;">
+                <h2>Projects</h2>
+                ...
+            </div>
+
+            <div id="languages" class="page" style="display: none;">
+                <h2>Languages</h2>
+
+                <table border="4">
+                    <tr>
+                        <td>limba romana</td>
+                        <td>nativ</td>
+                    </tr>
+                    <tr>
+                        <td>limba engleza</td>
+                        <td>mediu</td>
+                    </tr>
+                </table>
+
+            </div>
+    </section>
+
+
+    <footer>
+        <a target="_blank" href="https://fasttrackit.org">Curs Web</a>
+
+    </footer>
+
+
+
+
+    <script>
+        console.info("Salut!");
+        var name = "Iacob Mihai";
+        console.info(name);
+        var skills = ['html', 'css', 'js'];
+        console.info(skills)
+    </script>
+    <script src="functions.js"></script>
+</body>
+
+</html>
