@@ -21,8 +21,9 @@ body {
 }
 #top-menu-bar a {
     text-decoration: none;
-    padding: 0 15px 0 15px;
+    padding: 5px 15px 5px 15px;
     color: #fff;
+    display: inline-block;
 
 }
 
@@ -108,6 +109,10 @@ header > div{
     flex: 4;
 }
     
-#footer {   
+footer {   
     min-height: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
 }
