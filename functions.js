@@ -11,8 +11,8 @@ function hide(id) {
 
 function hideAllPages() {
     var pages = document.querySelectorAll(".page");
-    for (var i = 0; i < pages.lenght; i++) {
-        var page = pages[i];
+    for (var i = 0; i < pages.length; i++) {
+        const page = pages[i];
         var id = page.id;
         console.info("i=", i, pages[i]);
         hide(id);
@@ -21,23 +21,7 @@ function hideAllPages() {
 
 
 
-function showHome() {
+function showPage(pageId) {
     hideAllPages();
-    document.getElementById('home').style.display = '';
-}
-
-
-function showSkills() {
-    hideAllPages();
-    document.getElementById('skills').style.display = '';
-}
-
-function showProjects() {
-    hideAllPages();
-    document.getElementById("projects").style.display = "";
-}
-
-function showLanguages() {
-    hideAllPages();
-    document.getElementById("languages").style.display = "";
+    document.getElementById(pageId).style.display = "";
 }
