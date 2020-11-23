@@ -42,11 +42,13 @@ initMenu();
 
 showPage(activePage);
 
-var skills = [
+var allSkills = [
     { name: "HTML" , endorsements: 15 },
     { name: "CSS" , endorsements: 5},
     { name: "JS" , endorsements: 21},
 ];
+
+function showSkills(skills) {
 
 var skillsLi = skills.map(function (skill) {
     var endorsements = ` <span>&middot; ${skill.endorsements}</span>`;
@@ -56,3 +58,7 @@ var skillsLi = skills.map(function (skill) {
 // TODO add "favorite skill"
 var ul = document.querySelector("#skills ul");
 ul.innerHTML = skillsLi.join("");
+
+}
+
+showSkills(allSkills);
