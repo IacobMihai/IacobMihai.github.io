@@ -61,4 +61,9 @@ ul.innerHTML = skillsLi.join("");
 
 }
 
-showSkills(allSkills);
+fetch("data/skills.json").then(function(r) {
+    return r.json()
+}).then(function(allSkills) {
+    showSkills(allSkills);
+});
+
