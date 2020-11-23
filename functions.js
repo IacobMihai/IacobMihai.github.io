@@ -1,4 +1,4 @@
-var activePage = "skills";
+var activePage = "home";
 
 function hide(id) {
     document.getElementById(id).style.display = "none";
@@ -16,28 +16,28 @@ function hide(id) {
 
 function hidePreviousPage() {
     hide(activePage);
+    var link = document.querySelector(`#top-menu-bar a[data-page="${activePage}"]`);
+    link.classList.remove("active");
 }
 
 
 function showPage(pageId) {
-    //hideAllPages();
     hidePreviousPage();
     document.getElementById(pageId).style.display = "";
+    var link = document.querySelector(`#top-menu-bar a[data-page="${pageId}"]`);
+    link.classList.add("active");
     activePage = pageId;
 }
 
 function initMenu() {
-    console.warn('prepare click on links');
     document.addEventListener("click", function (e) {
         var link = e.target;
-        if (link.matches("#top-menu-bar a") {
-            var id = link.innerHTML.toLowerCase();
+        if (link.matches("#top-menu-bar a")) {
+            var id = link.getAttribute("data-page");
             showPage(id);
-        }
-
+        };
     });
 }
-
 initMenu();
 
 showPage(activePage);
